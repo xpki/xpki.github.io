@@ -1,0 +1,15 @@
+#timezone * {text-decoration: none;}
+body {
+    margin: 8px;
+    display: table;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 99%;
+    height: 97%;
+}
+.main {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
