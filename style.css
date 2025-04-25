@@ -13,3 +13,8 @@ body {
     vertical-align: middle;
     text-align: center;
 }
+.audio-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
