@@ -31,9 +31,19 @@
             <source src="aruarian dance.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>  
-        <button id="mute-btn" class="audio-toggle">
-            Mute
-        </button>
+        <script>
+            const bgMusic = document.getElementById("bg-audio");
+          
+            // Start muted (to avoid autoplay block)
+            bgMusic.play().catch(() => {
+              // If autoplay doesn't work, wait for user interaction
+            });
+          
+            document.addEventListener("click", () => {
+              bgMusic.muted = false;
+              bgMusic.play();
+            }, { once: true });
+        </script>
     </div>
 </body>
 </html>
