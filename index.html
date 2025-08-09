@@ -27,23 +27,6 @@
         <a href="about.html">about</a> //
         <a href="https://osu.ppy.sh/users/30957657" target="_blank">osu!</a> //
         <a href="https://discord.com/users/405180450793979904" target="_blank">contact</a>
-        <audio id="bg-audio" autoplay loop muted>
-            <source src="aruarian dance.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>  
-        <script>
-            const bgMusic = document.getElementById("bg-audio");
-          
-            // Start muted (to avoid autoplay block)
-            bgMusic.play().catch(() => {
-              // If autoplay doesn't work, wait for user interaction
-            });
-          
-            document.addEventListener("click", () => {
-              bgMusic.muted = false;
-              bgMusic.play();
-            }, { once: true });
-        </script>
     </div>
 </body>
 </html>
